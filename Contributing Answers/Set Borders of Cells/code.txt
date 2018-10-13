@@ -1,0 +1,101 @@
+Here is the Sample Code in C# for your reference.
+
+C#
+
+// Directory path for input and output files.
+String dirPath = "D:/Download/";
+ 
+// Load the input Excel file.
+Workbook wb = new Workbook(dirPath + "Input.xlsx");
+ 
+// Access first worksheet.
+Worksheet ws = wb.Worksheets[0];
+ 
+// Access cell C8.
+Cell cell = ws.Cells["C8"];
+ 
+// Access cell style.
+Style st = cell.GetStyle();
+ 
+// Set the Top border of the Cell
+st.Borders[BorderType.TopBorder].Color = Color.Red;
+st.Borders[BorderType.TopBorder].LineStyle = CellBorderType.Thick;
+ 
+// Set the Bottom border of the Cell
+st.Borders[BorderType.BottomBorder].Color = Color.Red;
+st.Borders[BorderType.BottomBorder].LineStyle = CellBorderType.Thick;
+ 
+// Set the Left border of the Cell
+st.Borders[BorderType.LeftBorder].Color = Color.Red;
+st.Borders[BorderType.LeftBorder].LineStyle = CellBorderType.Thick;
+ 
+// Set the Right border of the Cell
+st.Borders[BorderType.RightBorder].Color = Color.Red;
+st.Borders[BorderType.RightBorder].LineStyle = CellBorderType.Thick;
+ 
+// Set the Diagonal Up border of the Cell
+st.Borders[BorderType.DiagonalUp].Color = Color.Red;
+st.Borders[BorderType.DiagonalUp].LineStyle = CellBorderType.Thick;
+ 
+// Set the Diagonal Up border of the Cell
+st.Borders[BorderType.DiagonalDown].Color = Color.Red;
+st.Borders[BorderType.DiagonalDown].LineStyle = CellBorderType.Thick;
+ 
+// Set the cell style.
+cell.SetStyle(st);
+ 
+// Save the output Excel file.
+wb.Save(dirPath + "Output.xlsx");
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+---------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Here is the Sample Code in Java for your reference.
+
+Java
+
+// Directory path for input and output files.
+String dirPath = "D:/Download/";
+ 
+// Load the input Excel file.
+Workbook wb = new Workbook(dirPath + "Input.xlsx");
+ 
+// Access first worksheet.
+Worksheet ws = wb.getWorksheets().get(0);
+ 
+// Access cell C8.
+Cell cell = ws.getCells().get("C8");
+ 
+// Access cell style.
+Style st = cell.getStyle();
+ 
+// Set the Top border of the Cell
+st.getBorders().getByBorderType(BorderType.TOP_BORDER).setColor(Color.getRed());
+st.getBorders().getByBorderType(BorderType.TOP_BORDER).setLineStyle(CellBorderType.THICK);
+ 
+// Set the Bottom border of the Cell
+st.getBorders().getByBorderType(BorderType.BOTTOM_BORDER).setColor(Color.getRed());
+st.getBorders().getByBorderType(BorderType.BOTTOM_BORDER).setLineStyle(CellBorderType.THICK);
+ 
+// Set the Left border of the Cell
+st.getBorders().getByBorderType(BorderType.LEFT_BORDER).setColor(Color.getRed());
+st.getBorders().getByBorderType(BorderType.LEFT_BORDER).setLineStyle(CellBorderType.THICK);
+ 
+// Set the Right border of the Cell
+st.getBorders().getByBorderType(BorderType.RIGHT_BORDER).setColor(Color.getRed());
+st.getBorders().getByBorderType(BorderType.RIGHT_BORDER).setLineStyle(CellBorderType.THICK);
+ 
+// Set the Diagonal Up border of the Cell
+st.getBorders().getByBorderType(BorderType.DIAGONAL_UP).setColor(Color.getRed());
+st.getBorders().getByBorderType(BorderType.DIAGONAL_UP).setLineStyle(CellBorderType.THICK);
+ 
+// Set the Diagonal Up border of the Cell
+st.getBorders().getByBorderType(BorderType.DIAGONAL_DOWN).setColor(Color.getRed());
+st.getBorders().getByBorderType(BorderType.DIAGONAL_DOWN).setLineStyle(CellBorderType.THICK);
+ 
+// Set the cell style.
+cell.setStyle(st);
+ 
+// Save the output Excel file.
+wb.save(dirPath + "Output.xlsx");
