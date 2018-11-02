@@ -1,5 +1,5 @@
-C#
-
+# C#
+```js
 // Directory path for input and output files.
 String dirPath = "D:/Download/";
  
@@ -18,13 +18,10 @@ wb.Worksheets.ActiveSheetIndex = index;
 // Save the workbook as tab delimited text file. Tabulation inside the cell values will be preserved.
 TxtSaveOptions txtSaveOpts = new TxtSaveOptions(SaveFormat.TabDelimited);
 wb.Save(dirPath + "OutputExcelToTextWithTabs.txt", txtSaveOpts);
+```
+# Java
 
-// ------------------------------------------------------------------
-// ******************************************************************
-// ------------------------------------------------------------------
-
-Java
-
+```js
 // Directory path for input and output files.
 String dirPath = "D:/Download/";
  
@@ -43,4 +40,4 @@ wb.getWorksheets().setActiveSheetIndex(index);
 // Save the workbook as tab delimited text file. Tabulation inside the cell values will be preserved.
 TxtSaveOptions txtSaveOpts = new TxtSaveOptions(SaveFormat.TAB_DELIMITED);
 wb.save(dirPath + "OutputExcelToTextWithTabs.txt", txtSaveOpts);
-
+```
