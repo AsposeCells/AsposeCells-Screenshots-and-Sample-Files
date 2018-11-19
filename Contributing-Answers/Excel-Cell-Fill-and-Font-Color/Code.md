@@ -49,13 +49,14 @@ System.out.println(st.getForegroundColor());
 // Please note, Red is (R=255, G=0, B=0)
 System.out.println(st.getFont().getColor());
 ```
----
-**Console Output - C#**
+
+# Console Output - C#
 ```
 Color [A=255, R=255, G=255, B=0]
 Color [A=255, R=255, G=0, B=0]
 ```
-**Console Output - Java**
+
+# Console Output - Java
 ```
 com.aspose.cells.Color@ffffff00
 com.aspose.cells.Color@ffff0000
